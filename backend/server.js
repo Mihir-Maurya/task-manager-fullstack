@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(cors())
+app.use(cors({}))
 app.use("/api/tasks",router);
 
 // const logger = (req,res,next) =>{
@@ -36,3 +36,10 @@ const startServer = async () => {
 };
 
 startServer();
+
+
+
+// "backend": "nodemon backend/server.js",
+    // "frontend": "npm start --prefix frontend",
+    // "both": "concurrently \"npm run backend\" \"npm run frontend \" "
+  
