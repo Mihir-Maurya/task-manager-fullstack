@@ -5,6 +5,7 @@ const Task = ({task,index,deleteTask,getSingleTask , setToComplete}) => {
         <p>
           <b>{index+1}. </b>
           {task.name}
+          
         </p>
         <div className='task-icons'>
           <FaCheck color={task.completed === true ? 'grey':'black'} onClick={()=>setToComplete(task)}/>
