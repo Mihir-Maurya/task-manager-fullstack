@@ -36,7 +36,7 @@ const TaskList = () => {
        return toast.error("Authentication error");
      }
     try {
-      const response = await axios.get(`${URL}/api/tasks`, {
+      const response = await axios.get(`https://task-manager-server-wine.vercel.app/api/tasks`, {
         headers: {
           Authorization: `Bearer ${storedToken}`,
         },
@@ -60,7 +60,7 @@ const TaskList = () => {
     }
 
     // Make an authenticated API request using the token
-    axios.get('http://localhost:5000/api/tasks', {
+    axios.get('https://task-manager-server-wine.vercel.app/api/tasks', {
       headers: {
         Authorization: `Bearer ${storedToken}`,
       },
@@ -91,7 +91,7 @@ const TaskList = () => {
       }
 
       await axios.post(
-        `${URL}/api/tasks`,
+        `https://task-manager-server-wine.vercel.app/api/tasks`,
         { ...formData, completed: false },
         {
           headers: {
@@ -116,7 +116,7 @@ const TaskList = () => {
         return toast.error("Authentication error");
       }
 
-      await axios.delete(`${URL}/api/tasks/${id}`, {
+      await axios.delete(`https://task-manager-server-wine.vercel.app/api/tasks/${id}`, {
         headers: {
           Authorization: `Bearer ${storedToken}`,
         },
@@ -142,7 +142,7 @@ const TaskList = () => {
       }
 
       const response = await axios.put(
-        `${URL}/api/tasks/${taskID}`,
+        `https://task-manager-server-wine.vercel.app/api/tasks/${taskID}`,
         { ...formData, completed: false },
         {
           headers: {
@@ -242,7 +242,7 @@ const TaskList = () => {
     }
 
     try {
-      await axios.put(`${URL}/api/tasks/${task._id}`, newFormData, {
+      await axios.put(`https://task-manager-server-wine.vercel.app/api/tasks/${task._id}`, newFormData, {
         headers: {
           Authorization: `Bearer ${storedToken}`,
         },
