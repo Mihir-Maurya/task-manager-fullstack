@@ -33,7 +33,7 @@ const Register = () => {
           }
         try {
             
-           const response= await axios.post(`${URL}/register`,{...user});
+           const response= await axios.post(`https://task-manager-server-wine.vercel.app/register`,{...user});
            
            if(response.status === 200){
 
@@ -67,7 +67,7 @@ const Register = () => {
             return toast.error('Email and password are required fields');
           }
         try {
-            const response =await axios.post(`${URL}/login`,userLogin)
+            const response =await axios.post(`https://task-manager-server-wine.vercel.app/login`,userLogin)
             
             
     if (response.status === 200) {
