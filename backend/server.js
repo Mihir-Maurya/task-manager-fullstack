@@ -10,9 +10,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors({
-  origin:["https://task-manager-frontend-pink.vercel.app/"],
-  methods:["POST", "GET" , "PUT" , "DELETE"],
-  credentials:true
+  // origin:["https://task-manager-frontend-pink.vercel.app/"],
+  // methods:["POST", "GET" , "PUT" , "DELETE"],
+  // credentials:true
 }))
 app.use("/",userRouter)
 app.use("/api/tasks",taskrouter);
