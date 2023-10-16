@@ -19,6 +19,8 @@ const TaskList = () => {
     completed: false,
   });
 
+  axios.defaults.withCredentials = true;
+
   const { name } = formData;
 
   const handleInputChange = (e) => {
