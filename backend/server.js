@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(cors({
-  origin:[""],
+  origin:["https://task-manager-frontend-pink.vercel.app/"],
   methods:["POST", "GET" , "PUT" , "DELETE"],
   credentials:true
 }))
