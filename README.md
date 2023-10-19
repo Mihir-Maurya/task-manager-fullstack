@@ -1,8 +1,8 @@
 # task-manager-fullstack
 It is a full stack mern app using JWT for user Authentication, MongoDB for databases
-after successful login user can create , update, edit, and delete
+after successful login user can create, update, edit, and delete
 
-# TO run the project
+# Clone the project
 1. clone the project or download the zip file of the whole code and unzip it
 
 # To run backend
@@ -14,5 +14,5 @@ in .env file first create the .env file in frontend
 
 # To run frontend
 1. cd frontend folder
-2. create .env file and add this REACT_APP_SERVER_URL = http://localhost:5000
+2. create a .env file and add this REACT_APP_SERVER_URL = http://localhost:5000
 3. then write npm install
